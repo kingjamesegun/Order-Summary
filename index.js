@@ -5,7 +5,7 @@ const cors = require("cors");
 
 // oder_summary.json
 const data = require("./order_summary.json");
-const PORT = 5000;
+const PORT =  process.env.PORT || 5000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
